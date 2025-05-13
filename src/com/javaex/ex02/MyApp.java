@@ -37,11 +37,12 @@ public class MyApp {
 		// 원 리스트에 원 추가
 		cList.add(c01);
 		cList.add(c02);
-		cList.add(c03);
+		cList.add(p03); // 다른 종류가 들어와도 오류가 나지 않는다.
 
 		// 출력
 		for (int i = 0; i < cList.size(); i++) {
 			System.out.println(cList.get(i));
+			// System.out.println(((Circle)cList.get(i)).getRadius());, 강제형변환
 		}
 
 	}
